@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/outer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rootPanel"
+        android:layout_width="@dimen/progress_dialog_size"
+        android:layout_height="@dimen/progress_dialog_size"
+        android:background="@drawable/default_progress_dialog_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/progress_dialog_img_size"
+            android:layout_height="@dimen/progress_dialog_img_size"
+            android:contentDescription="@null"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/progress_dialog_img_size"
+            android:layout_height="@dimen/progress_dialog_img_size"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/progress_dialog_txt_m_t"
+            android:textColor="@color/blackLight"
+            android:textSize="@dimen/progress_dialog_txt_size"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

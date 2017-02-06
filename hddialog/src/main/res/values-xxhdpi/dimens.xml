@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- HDialogBuilder-->
+    <dimen name="dialog_title_bar_height">48dp</dimen>
+    <dimen name="dialog_title_icon_size">32dp</dimen>
+    <dimen name="dialog_title_icon_m_l">12dp</dimen>
+    <dimen name="dialog_title_text_size">20sp</dimen>
+    <dimen name="dialog_msg_min_height">102dp</dimen>
+    <dimen name="dialog_msg_p_h">18dp</dimen>
+    <dimen name="dialog_msg_text_size">16sp</dimen>
+    <dimen name="dialog_btn_height">36dp</dimen>
+    <dimen name="dialog_btn_m_h">8dp</dimen>
+    <dimen name="dialog_btn_text_size">14sp</dimen>
+    <dimen name="dialog_out_padding">16dp</dimen>
+    <dimen name="dialog_corner_radius">4dp</dimen>
+
+    <!-- Progress Dialog-->
+    <dimen name="progress_dialog_size">128dp</dimen>
+    <dimen name="progress_dialog_corner_radius">4dp</dimen>
+    <dimen name="progress_dialog_img_size">56dp</dimen>
+    <dimen name="progress_dialog_txt_m_t">16dp</dimen>
+    <dimen name="progress_dialog_txt_size">16sp</dimen>
+
+</resources>
