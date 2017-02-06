@@ -122,7 +122,10 @@ public class MainActivity extends AppCompatActivity {
         btnNo.setText(txtNo);
         btnYes.setOnClickListener(v -> dialogClickListener.p());
         btnNo.setOnClickListener(v -> dialogClickListener.n());
-        hDialogBuilder.setCustomView(customView).dlgColor(Color.TRANSPARENT).show();
+        hDialogBuilder.setCustomView(customView)
+                .dlgColor(Color.TRANSPARENT)
+                .cancelable(false)
+                .show();
     }
 
     private void showBldDlgNormal() {

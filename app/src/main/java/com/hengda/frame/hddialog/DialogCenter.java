@@ -42,7 +42,10 @@ public class DialogCenter {
         btnNo.setText(txtNo);
         btnYes.setOnClickListener(v -> dialogClickListener.p());
         btnNo.setOnClickListener(v -> dialogClickListener.n());
-        hDialogBuilder.setCustomView(customView).dlgColor(Color.TRANSPARENT).show();
+        hDialogBuilder.setCustomView(customView)
+                .dlgColor(Color.TRANSPARENT)
+                .cancelable(false)
+                .show();
     }
 
     /**

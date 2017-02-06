@@ -47,6 +47,7 @@ compile 'com.hengda.zwf:HdDialog:0.0.5'
     private void showCustomDlg(String title, String msg, String txtYes, String txtNo,
                                DialogClickListener dialogClickListener) {
         hDialogBuilder = new HDialogBuilder(mContext);
+
         View customView = View.inflate(mContext, R.layout.dialog_custom_view_all, null);
         TextView tvTitle = HdTool.getView(customView, R.id.tvTitle);
         TextView tvMsg = HdTool.getView(customView, R.id.tvMsg);
@@ -58,7 +59,11 @@ compile 'com.hengda.zwf:HdDialog:0.0.5'
         btnNo.setText(txtNo);
         btnYes.setOnClickListener(v -> dialogClickListener.p());
         btnNo.setOnClickListener(v -> dialogClickListener.n());
-        hDialogBuilder.setCustomView(customView).dlgColor(Color.TRANSPARENT).show();
+
+        hDialogBuilder.setCustomView(customView)
+                        .dlgColor(Color.TRANSPARENT)
+                        .cancelable(false)
+                        .show();
     }
 ```
 封装好之后，可以写到工具类中供直接调用.
@@ -83,6 +88,7 @@ public class DialogCenter {
                                DialogClickListener dialogClickListener) {
         hideDialog();
         hDialogBuilder = new HDialogBuilder(mContext);
+
         View customView = View.inflate(mContext, R.layout.dialog_custom_view_all, null);
         TextView tvTitle = HdTool.getView(customView, R.id.tvTitle);
         TextView tvMsg = HdTool.getView(customView, R.id.tvMsg);
@@ -94,7 +100,11 @@ public class DialogCenter {
         btnNo.setText(txtNo);
         btnYes.setOnClickListener(v -> dialogClickListener.p());
         btnNo.setOnClickListener(v -> dialogClickListener.n());
-        hDialogBuilder.setCustomView(customView).dlgColor(Color.TRANSPARENT).show();
+
+        hDialogBuilder.setCustomView(customView)
+                        .dlgColor(Color.TRANSPARENT)
+                        .cancelable(false)
+                        .show();
     }
 
     /**
