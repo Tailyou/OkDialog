@@ -1,5 +1,5 @@
 ## 一、概述
-通用Dialog，适用于ProgressDialog，BuilderDialog。
+通用Dialog，适用于ProgressDialog，BuilderDialog，可以设置字体、进入退出动画，同时兼容手机和导览机。
 ## 二、版本
 已在多个项目中使用，且已上传jCenter，最新版本0.0.5，直接在gradle中添加即可。
 compile 'com.hengda.zwf:HdDialog:0.0.5'
