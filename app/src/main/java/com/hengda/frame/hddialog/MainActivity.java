@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                                 hDialogBuilder.dismiss();
                             }
                         });*/
-                DialogCenter.showCustomDlg(mContext,"注销", "退出账号可能会使连续登录记录归零，确定退出？",
+                DialogCenter.showCustomDlg(mContext, "注销", "退出账号可能会使连续登录记录归零，确定退出？",
                         "确定退出", "取消",
                         new DialogClickListener() {
                             @Override
@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void showCustomDlg() {
         HDialogBuilder hDialogBuilder = new HDialogBuilder(mContext);
+
         View customView = View.inflate(mContext, R.layout.dialog_custom_view_all, null);
         TextView tvTitle = HdTool.getView(customView, R.id.tvTitle);
         TextView tvMsg = HdTool.getView(customView, R.id.tvMsg);
@@ -94,7 +95,11 @@ public class MainActivity extends AppCompatActivity {
         btnNo.setText("取消");
         btnYes.setOnClickListener(v -> hDialogBuilder.dismiss());
         btnNo.setOnClickListener(v -> hDialogBuilder.dismiss());
-        hDialogBuilder.setCustomView(customView).dlgColor(Color.TRANSPARENT).show();
+
+        hDialogBuilder.setCustomView(customView)
+                .dlgColor(Color.TRANSPARENT)
+                .cancelable(false)
+                .show();
     }
 
     /**
