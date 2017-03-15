@@ -5,7 +5,7 @@ publish {
     userOrg = 'hdandroidteam'
     groupId = 'com.hengda.zwf'
     artifactId = 'HdDialog'
-    publishVersion = '0.0.5'
+    publishVersion = '0.0.6'
     desc = 'HdDialog'
     website = 'https://github.com/Tailyou/'
 
