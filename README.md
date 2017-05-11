@@ -1,8 +1,8 @@
-## 1、概述
+## 一、概述
 
 通用Dialog，适用于ProgressDialog，BuilderDialog，可以设置字体、进入退出动画等。
 
-## 2、效果
+## 二、效果
 
 ### 1、ProgressDialog补间动画
 ![](http://oksdjdocc.bkt.clouddn.com/17-2-6/79120594-file_1486346779883_dc73.png)
@@ -13,7 +13,7 @@
 ### 4、BuilderDialog自定义布局
 ![](http://oksdjdocc.bkt.clouddn.com/17-2-6/76351990-file_1486346780326_3ff9.png)
 
-## 3、使用
+## 三、使用
 
 ### Gradle
 
@@ -38,7 +38,7 @@ dependencies {
 
 此处以BuilderDialog自定义布局为例，简单介绍说使用，具体用法参见demo。
 
-```
+```java
     /**
      * 该方法通过提取文字参数和点击事件可以继续封装
      *
@@ -69,8 +69,9 @@ dependencies {
 
 封装后:
 
-```
-    private void showCustomDlg(String title, String msg, String txtYes, String txtNo, DialogClickListener dialogClickListener) {
+```java
+    private void showCustomDlg(String title, String msg, String txtYes, String txtNo,
+     DialogClickListener dialogClickListener) {
         hDialogBuilder = new HDialogBuilder(mContext);
 
         View customView = View.inflate(mContext, R.layout.dialog_custom_view_all, null);
@@ -94,7 +95,7 @@ dependencies {
 
 封装好之后，可以写到工具类中供直接调用.
 
-```
+```java
 /**
  * 作者：Tailyou （祝文飞）
  * 时间：2016/5/26 19:03
@@ -111,8 +112,8 @@ public class DialogCenter {
      * @author 祝文飞（Tailyou）
      * @time 2017/2/6 9:39
      */
-    public static void showCustomDlg(Context mContext, String title, String msg, String txtYes, String txtNo,
-                               DialogClickListener dialogClickListener) {
+    public static void showCustomDlg(Context mContext, String title, String msg, 
+                                String txtYes, String txtNo, DialogClickListener dialogClickListener) {
         hideDialog();
         hDialogBuilder = new HDialogBuilder(mContext);
 
