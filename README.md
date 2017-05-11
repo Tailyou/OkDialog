@@ -71,7 +71,7 @@ dependencies {
 
 ```java
     private void showCustomDlg(String title, String msg, String txtYes, String txtNo,
-     DialogClickListener dialogClickListener) {
+                                DialogClickListener dialogClickListener) {
         hDialogBuilder = new HDialogBuilder(mContext);
 
         View customView = View.inflate(mContext, R.layout.dialog_custom_view_all, null);
@@ -113,7 +113,8 @@ public class DialogCenter {
      * @time 2017/2/6 9:39
      */
     public static void showCustomDlg(Context mContext, String title, String msg, 
-                                String txtYes, String txtNo, DialogClickListener dialogClickListener) {
+                                        String txtYes, String txtNo, 
+                                        DialogClickListener dialogClickListener) {
         hideDialog();
         hDialogBuilder = new HDialogBuilder(mContext);
 
