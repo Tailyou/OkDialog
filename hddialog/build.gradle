@@ -2,15 +2,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 publish {
-    userOrg = 'hdandroidteam'
+    userOrg = 'tailyou'
     groupId = 'com.hengda.zwf'
-    artifactId = 'HdDialog'
+    artifactId = 'OkDialog'
     publishVersion = '0.0.7'
-    desc = 'HdDialog'
+    desc = 'OkDialog'
     website = 'https://github.com/Tailyou/'
 
-    bintrayUser = 'hdandroidteam'
-    bintrayKey = '73d6b8e5010a405d8e5dabea6e235fe913177f89'
+    bintrayUser = 'tailyou'
+    bintrayKey = '37d810ba665230de033e44b1e5a0b01f86923bf7'
 }
 
 android {
