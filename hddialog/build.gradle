@@ -5,7 +5,7 @@ publish {
     userOrg = 'tailyou'
     groupId = 'com.hengda.zwf'
     artifactId = 'OkDialog'
-    publishVersion = '0.0.7'
+    publishVersion = '0.0.1'
     desc = 'OkDialog'
     website = 'https://github.com/Tailyou/'
 
