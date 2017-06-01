@@ -1,1 +1,1 @@
-include ':app', ':okdialog'
+include ':app', ':library'
