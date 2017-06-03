@@ -1,5 +1,5 @@
 ## 一、概述
-通用Dialog，适用于ProgressDialog，BuilderDialog，可以设置字体、进入退出动画，同时兼容手机和导览机。
+通用Dialog，适用于ProgressDialog，BuilderDialog，可以设置字体、进入退出动画。
 
 ## 二、版本
 OkDialog已上传jcenter，直接在gradle中添加依赖即可。
